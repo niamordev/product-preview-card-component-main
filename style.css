@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap'); 
+/* font-family: 'Montserrat', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+/* font-family: 'Fraunces', serif; */
+
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color:hsl(30, 38%, 92%);
+}
+
+.preview{
+    position: absolute;
+    margin-top: 45px;
+    display: flex;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.info-preview{
+    background-color: white;
+    height: 260px;
+    padding: 20px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    border-bottom-right-radius : 10px;
+    border-top-right-radius : 10px;
+
+}
+
+
+
+.img-preview-full-screen{
+    width: 200px;
+    height: 300px; 
+    border-top-left-radius : 10px;
+    border-bottom-left-radius : 10px;
+}
+
+.img-preview-mobile{
+    width: 360px;
+    height: 240px;
+    display: none;
+    border-top-left-radius : 10px;
+    border-top-right-radius : 10px;
+
+}
+
+.price {
+    display: flex;
+    justify-content: space-around;
+}
+.new-price {
+    color: hsl(158, 36%, 37%);
+    font-size: 20px;
+    font-family: 'Fraunces', serif;
+}
+.previous-price {
+    text-decoration: line-through;
+}
+
+.description{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+h1{
+    font-size: 20px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#button-buy {
+    display: flex;
+    background-color: hsl(158, 36%, 37%);
+    justify-content: center;
+    padding: 8px;
+    border-radius: 5px;
+    border-color: hsl(158, 36%, 37%);
+
+}
+
+#button-buy p {
+    margin-left: 15px;
+    color: white;
+}
+
+
+@media screen and (max-width: 450px) {
+    
+    .preview{
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .img-preview-full-screen{
+        display: none;
+    }
+
+    .img-preview-mobile{
+        display: block;
+    }
+
+    .info-preview{
+        width: 320px;
+    }
+
+    .info-preview{     
+        border-bottom-left-radius : 10px;
+        border-bottom-right-radius : 10px;
+        border-top-left-radius : 0;
+        border-top-right-radius : 0;
+        margin-bottom: 15px;
+    }
+  }
