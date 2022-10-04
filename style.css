@@ -101,7 +101,7 @@ h2{
 }
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     
     .preview{
         flex-direction: column;
