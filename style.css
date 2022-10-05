@@ -24,9 +24,9 @@ body{
 
 .info-preview{
     background-color: white;
-    height: 300px;
+    height: 320px;
     padding: 20px;
-    width: 200px;
+    width: 220px;
     display: flex;
     flex-direction: column;
     justify-content: space-around; 
@@ -38,8 +38,8 @@ body{
 
 
 .img-preview-full-screen{
-    width: 240px;
-    height: 340px; 
+    width: 260px;
+    height: 360px; 
     border-top-left-radius : 10px;
     border-bottom-left-radius : 10px;
 }
@@ -92,13 +92,13 @@ h2{
     padding: 8px;
     border-radius: 5px;
     border-color: hsl(158, 36%, 37%);
-
-}
-
-#button-buy p {
     font-size: 14px;
     margin-left: 15px;
     color: white;
+}
+
+#card-icon{
+    margin-right: 10px;
 }
 
 
